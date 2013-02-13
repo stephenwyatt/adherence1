@@ -1,0 +1,31 @@
+<div class="navbar navbar-fixed-top navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <a href="#" class="brand">Adherence Demo</a>
+      <ul class="nav">
+        <li><a href="#/">Home</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <button class="btn btn-primary" ng-click="edit()">Edit</button>
+  <button class="btn btn-danger" ng-click="delete()">Delete</button>
+  <a class="btn" ng-href="#/patients/{{survey.patient.id}}">Back</a>
+  
+  <h1>{{survey.patient.name}}</h1>
+  <h2>{{survey.name}}</h2>
+  <div class="well">
+    <p>Question 1: </p>
+    <p>{{survey.question1}}</p>
+    <hr></hr>
+    <p>Question 2: </p>
+    <p>Value</p>
+    <hr></hr>
+    <p>Question 3: </p>
+    <p>Value</p>
+    <hr></hr>
+    <p>Question 4: </p>
+    <p>Value</p>
+  </div>
+</div>

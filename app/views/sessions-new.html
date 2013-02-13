@@ -1,0 +1,26 @@
+<div class="navbar navbar-fixed-top navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <a href="#" class="brand">Adherence Demo</a>
+      <ul class="nav">
+        <li><a href="#/">Home</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h1>Login</h1>
+  <form>
+    <p>
+      <label>Username</label>
+      <input type="text" ng-model="user.username"></input>
+    </p>
+    <p>
+      <label>Password</label>
+      <input type="password" ng-model="user.password"></input>
+    </p>
+    <p>
+      <button class="btn btn-primary" ng-click="login(user)">Login</button>
+    </p>
+  </form>
+</div>
