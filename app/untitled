@@ -1,0 +1,6 @@
+when('/edit/:id', {templateUrl: '/app/partials/edit.html', controller: 'UserCtrl'}).
+      when('/new', {templateUrl: '/app/partials/survey.html',controller: 'SurveyCtrl'}).
+      when('/new1', {templateUrl: '/app/partials/edit.html',controller: 'CreateCtrl'}).
+      when('/user', {templateUrl: '/app/views/user.html', controller: 'UserCtrl'}).
+      when('/user/:id', {templateUrl: '/app/views/history1.html', controller: 'UserCtrl'}).
+      when('/survey', {templateUrl: '/app/views/index.html', controller: 'SurveyCtrl'}).

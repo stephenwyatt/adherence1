@@ -1,0 +1,70 @@
+tbody {
+	width:400px;
+}
+#header h2{
+	color:white;
+}
+
+#formm{
+	width:400px;
+}
+
+
+.form-search{
+	padding-top: 25px;
+	float: right;
+}
+#table{
+	width:600px;
+	font-size: 25px;
+}
+
+
+#formlog {
+	width:500px;
+}
+
+#survey .li{
+	padding-top: 10px;
+}
+.container {
+	font-size: 20px;
+
+margin:auto;
+}
+.container li{
+	list-style: none;
+	padding-top: 10px;
+	border:2px;
+
+}
+#answer {
+	list-style: none;
+}
+body
+{
+	font-family: Helvetica, "Lucida Grande", Geneva, Arial, Helvetica, sans-serif;
+background-color:#e5e5e5;
+}
+#header
+{background: none repeat scroll 0 0 #1e4262;
+	padding-top:20px;
+	padding-left: 50px;
+height:100px;}
+.brand {
+	
+	color:white;
+	font-size: 30px;
+	text-align: center;
+}
+#formlog {
+	margin:auto 0;
+}
+table .tr
+	width:500px;
+} 
+.assess .a
+{text-transform: uppercase; text-align: right;}
+
+#name
+{margin-top:50px;}

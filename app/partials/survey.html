@@ -1,0 +1,20 @@
+<h2><ng-model={{patient.firstname}}></h2>
+<h4>Adherence Survey</h4>
+<ng-model="{{patient.firstname}}">
+    <ol ng-repeat="survey in surveys">
+     <h5>{{survey.question}}</h5>
+       <input class="calc" type="radio" ng-model="answer" value="0">  YES <br/>
+       <input class="calc" type="radio" ng-model="answer" value="1"> NO <br/>
+       <tt>Value= {{answer}}</tt><br/>
+   </ol>
+   <button ng-click="calcScore()"> Calculate </button>
+ 		Total Score: <input type="text" name="sum"/>
+
+
+ 	<form ng-submit="addScore()">
+        <input type="text" ng-model="score"  size="2">
+       
+     		 <a href="#/" class="btn">Cancel</a>
+  	     <button ng-click="save()" 
+          class="btn">Save</button>
+  </form>

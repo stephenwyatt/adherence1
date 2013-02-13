@@ -1,0 +1,35 @@
+<h3>Patient Display List</h3>
+<div id="name">
+	<h3>Patient Name</h3></br>
+		Search: <input ng-model="query">
+		
+
+<table cols="3">
+	<table class="table table-striped">
+		<thead>
+		<tbody>
+			<td>First Name</td>
+			<td>Last Name</td>
+			<td>Patient ID</td>
+		<td><a href="#/new1"><i class="icon-plus-sign"></i>Add New Patient</a></td>
+		</tr>
+	</thead>
+	<tr ng-repeat="person in patients | filter:query"> 
+		<td><a ng-href="#/user/{{person.id}}">{{person.firstname}}</td>
+		<td><a ng-href="#/user/{{person.id}}">{{person.lastname}}</a></td>
+		<td><a ng-href="#/user/{{person.id}}">{{person.id}}</a></td>
+		<td><a href= "/edit/{{$index}}"><i class="icon-edit"></i></a></td>
+	</tr>
+</tbody>
+</table>
+<h4>Add a New Patient</h4>
+<div id="formm">
+<form ng-submit="addPatient()">
+	<input type="text" ng-model="firstname" size="15" placeholder="Enter a First Name"/>
+	<input type="text" ng-model="lastname" size="15" placeholder="Enter a Last Name"/>
+	<input type="text" ng-model="id" size="4" placeholder="Enter an Id"/>
+	<input class="btn-primary" type="submit" value="add">
+</form>
+</div>
+
+</div>

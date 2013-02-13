@@ -1,0 +1,18 @@
+{{patient.firstname[0]}}
+<table>
+	<table class="table table-striped">
+		<thead>
+		<tbody>
+			<td>First Name</td>
+			<td>Last Name</td>
+			<td>Patient ID</td>
+			<th><a href="#/new1"><i class="icon-plus-sign"></i></a></th>
+		</tr>
+	<tr ng-repeat="patient in patients | filter:query"> 
+		<td><a ng-href="#/user/{{patient.id}}">{{patient.firstname}}</td>
+		<td><a ng-href="#/user/{{patient.id}}">{{patient.lastname}}</a></td>
+		<td><a ng-href="#/user/{{patient.id}}">{{patient.id}}</td>
+		<td><a href="/edit">i class="icon-edit"></i></a></td>
+	</tr>
+</tbody>
+</table>
