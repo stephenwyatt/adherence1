@@ -3,7 +3,7 @@
     <div class="container">
       <a href="#" class="brand">Adherence Demo</a>
       <ul class="nav">
-        <li><a href="#/">Home</a></li>
+        <li><a href="#/patients/">Home</a></li>
       </ul>
     </div>
   </div>
@@ -16,16 +16,19 @@
   <h1>{{survey.patient.name}}</h1>
   <h2>{{survey.name}}</h2>
   <div class="well">
-    <p>Question 1: </p>
-    <p>{{survey.question1}}</p>
-    <hr></hr>
-    <p>Question 2: </p>
-    <p>Value</p>
-    <hr></hr>
-    <p>Question 3: </p>
-    <p>Value</p>
-    <hr></hr>
-    <p>Question 4: </p>
-    <p>Value</p>
+   <ol>
+    <hr><li ng-repeat="question in questions">
+        <b> {{question.name}}</b></br>
+       <input class="calc" type="radio" ng-model="answer" value="0">  Yes 
+       <input class="calc" type="radio" ng-model="answer" value="1"> No <hr/>
+       </li>
+    </hr>
+   </ol>
+    <button class="btn btn-primary" ng-click="calcScore()"> Calculate </button>
+    Total Score: <input type="text" name="sum"/></hr>
+    <button class="btn btn-primary pull-right" ng-click="update(survey)">Update Survey</button>_
+    <a ng-href="#/survey/{{patient.id}}">
   </div>
 </div>
+
+   

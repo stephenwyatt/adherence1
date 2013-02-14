@@ -10,9 +10,17 @@
 </div>
 <div class="container">
   <h1>Patients</h1>
-  <ul>
-    <li ng-repeat="patient in patients">
-      <a ng-href="#/patients/{{patient.id}}">{{patient.name}}</a>
-    </li>
-  </ul>
+  <table class="table table-striped">
+     <thead>
+    <tr>
+      <th><h3>Patient Name</h3> </th>
+      <th><h3>ID</h3></th>
+    </tr>
+  </thead>
+
+    <tr ng-repeat="patient in patients">
+    <td> <a ng-href="#/patients/{{patient.id}}">{{patient.name}}</a></td>
+    <td> <a ng-href="#/patients/{{patient.id}}">{{patient.id}}</td>
+   
+</table>
 </div>

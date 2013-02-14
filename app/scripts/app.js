@@ -9,7 +9,7 @@ var app = angular.module('ngApp', [])
     .when('/sessions/new', { controller: 'SessionsNewCtrl', templateUrl: '/app/views/sessions-new.html'})
     .otherwise({redirectTo: '/sessions/new'});
   })
-  .factory('surveyService', function(util){
+   .factory('surveyService', function(util){
     var surveys;
     return {
       surveys: surveys,

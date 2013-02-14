@@ -9,12 +9,17 @@
   </div>
 </div>
 <div class="container">
-  <h1>{{patient.name}}</h1>
+  
   <button class="btn btn-primary pull-right" ng-click="newSurvey()">New Survey</button>
   <h2>Surveys</h2>
-  <ul>
-    <li ng-repeat="survey in surveys">
-      <a ng-href="#/surveys/{{survey.id}}">{{survey.name}}</a>
-    </li>
-  </ul>
+  <table class="table table-striped table-bordered">
+     <thead>
+    <tr>
+      <th><h3>{{patient.name}} | Patient ID: {{patient.id}}</h3></th><th><h3> Date</h3></th>
+  </tr>  
+  </thead>
+    <tr ng-repeat="survey in surveys">
+      <td><a ng-href="#/surveys/{{survey.id}}">{{survey.name}}</a></td>
+      <td>{{survey.date}}2/14/2013</td>
+    </tr>
 </div>

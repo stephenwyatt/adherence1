@@ -7,4 +7,6 @@ app.controller('SurveyNewCtrl', function($scope, $location, surveyService, util,
     // need to save survey first
     $location.path('/patients/' + $routeParams.id);
   }
+
+  
 })

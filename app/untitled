@@ -4,3 +4,25 @@ when('/edit/:id', {templateUrl: '/app/partials/edit.html', controller: 'UserCtrl
       when('/user', {templateUrl: '/app/views/user.html', controller: 'UserCtrl'}).
       when('/user/:id', {templateUrl: '/app/views/history1.html', controller: 'UserCtrl'}).
       when('/survey', {templateUrl: '/app/views/index.html', controller: 'SurveyCtrl'}).
+
+
+      <strong><p>Question 1: </p></strong>
+      <p>Do you sometimes forget to take your health concern pills? </p>
+         <input class="calc" type="radio" ng-model="answer" value="0"> YES 
+         <input class="calc" type="radio" ng-model="answer" value="1"> NO <br/></br>
+      <strong><p>Question 2: </p></strong>
+      <p>People sometimes miss taking their medications for reasons other than forgetting. Thinking over the past two weeks, were there any days when you did not take your health concern medicine?</p>
+         <input class="calc" type="radio" ng-model="answer" value="0"> YES 
+         <input class="calc" type="radio" ng-model="answer" value="1"> NO <br/></br>
+      <p>Value</p>
+      <hr></hr>
+      <strong><p>Question 3:</p></strong>
+      <p> Have you ever cut back or stopped taking your medication without telling your doctor, because you felt worse when you took it?</p>
+      <p>Value</p>
+         <input class="calc" type="radio" ng-model="answer" value="0"> YES 
+         <input class="calc" type="radio" ng-model="answer" value="1"> NO <br/></br>
+      <strong><p>Question 4: </p></strong>
+      <p> When you travel or leave home, do you sometimes forget to bring along your health concern medication?</p>
+         <input class="calc" type="radio" ng-model="answer" value="0"> YES 
+         <input class="calc" type="radio" ng-model="answer" value="1"> NO </p>
+      

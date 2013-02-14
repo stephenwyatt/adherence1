@@ -9,21 +9,17 @@
   </div>
 </div>
 <div class="container">
-  <h1>New Survey</h1>
-  <h2>{{patient.name}}</h2>
+  <h2>New Survey</h2>
+  <h2><a ng-href="#/patients/{{patient.id}}">{{patient.name}}</a></h2>
   <form>
     <p>
-      <label>Name</label>
-      <input type="text" ng-model="survey.name"></input>
+      <label>Survey Name</label>
+      <input type="text" ng-model="survey.name" placeholder="Enter a Survey name"></input>
     </p>
 
-    <p>
-      <label>Question 1</label>
-      <input type="text" ng-model="survey.question1"></input>
-    </p>
-    <p>
+   
       <button class="btn btn-primary" ng-click="create(survey)">Create Survey</button>
       <a href="#/patients/1" class="btn btn-warning">Cancel Survey</a>
     </p>
   </form>
-</div>
+    
