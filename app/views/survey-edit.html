@@ -12,15 +12,19 @@
   <h1>Edit Survey</h1>
   <h2>{{survey.patient.name}}</h2>
   <h3>{{survey.name}}</h3>
-  <form>
-    <p>
-      <label>Question 1</label>
-      <input type="text" ng-model="survey.question1"></input>
-    </p>
-    <p>
-      <button class="btn btn-primary" ng-click="update(survey)">Update Survey</button>
-      <a ng-href="#/survey/{{survey.id}}" class="btn btn-warning">Cancel Survey</a>
-    </p>
-  </form>
-  
-</div>
+<div class="well">
+ <form> 
+   <ol>
+    <hr><li ng-repeat="question in questions">
+        <b> {{question.name}}</b></br>
+       <input class="calc" type="radio" ng-model="answer" value="0">  Yes 
+       <input class="calc" type="radio" ng-model="answer" value="1"> No <hr/>
+       </li>
+    </hr>
+   </ol>
+    <button class="btn btn-primary" ng-click="calcScore()"> Calculate </button>
+    Total Score: <input type="text" name="sum"/></hr>
+    <button class="btn btn-primary pull-right" ng-click="update(survey)">Update Survey</button>
+    <a ng-href="#/survey/{{patient.id}}">
+   </form>
+  </div>

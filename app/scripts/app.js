@@ -41,7 +41,8 @@ var app = angular.module('ngApp', [])
   .factory('patientService', function(util) {
     var patients = [
       { id: 1, name: 'Johnny Patient' },
-      { id: 2, name: 'Susie Patient'}
+      { id: 2, name: 'Susie Patient'},
+      { id: 3, name: 'Harry Truman'}
     ]
     return { 
       patients: patients,
